@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-screen',
@@ -14,7 +15,9 @@ export class LoginScreenComponent implements OnInit {
   public hide_1: boolean = false;
   public inputType_1: string = 'password';
 
-  constructor() { }
+  constructor(
+      private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
@@ -24,11 +27,11 @@ export class LoginScreenComponent implements OnInit {
   }
 
   public recuperarPwd(){
-
+    
   }
 
   public goRegistro(){
-
+    this.router.navigate(["registro"])
   }
   
   showPassword()
