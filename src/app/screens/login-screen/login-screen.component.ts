@@ -27,7 +27,7 @@ export class LoginScreenComponent implements OnInit {
   }
 
   public recuperarPwd(){
-    
+    this.router.navigate(["juego terminado"]);
   }
 
   public goRegistro(){

@@ -23,7 +23,7 @@ export class LeftSidebarComponent implements OnInit {
   }
 
   public goInicio(){
-
+    
   }
 
   public goBasesPromocion(){

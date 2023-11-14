@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './home-screen.component.html',
   styleUrls: ['./home-screen.component.scss']
 })
+
 export class HomeScreenComponent implements OnInit {
 
   public name_user: string = "Diego Nava";
@@ -15,7 +16,11 @@ export class HomeScreenComponent implements OnInit {
   public inputsCodigo : FormGroup;
   public tiendas: any[] = [{value: "liverpool", nombre: "Liverpool"}, {value:"devlyn", nombre: "Ópticas Devlyn"}];
   public selectedValue: string = "";
-
+  public participacion: any = {};
+  //Lista de codigos
+  public lista_codigos: any[] = [];
+  public tiene_juegos_pendientes: boolean = false;
+  
   constructor(
     private router: Router,
     private fb: FormBuilder,
@@ -23,6 +28,7 @@ export class HomeScreenComponent implements OnInit {
 
   ngOnInit(): void {
     this.initInputsCodigo();
+    this.obtenerCodigos();
   }
 
   initInputsCodigo(){
@@ -35,12 +41,51 @@ export class HomeScreenComponent implements OnInit {
       control_1.push(this.fb.group({valor:'', extra: false}));
     }
   }
-
+  
   get getCamposInputs(){
     return this.inputsCodigo.get('listaInputs') as FormArray;
   }
 
   public saberMas(){
+
+  }
+
+  public obtenerCodigos(){
+    this.lista_codigos = [
+      {
+        "creation": "2022-10-18",
+        "codigo": 264956,
+        "puntos_totales": 1100,
+        "puntos_codigo": 1000,
+        "puntos_jugar": 100,
+      },
+      {
+        "creation": "2022-11-20",
+        "codigo": 254956,
+        "puntos_totales": 1300,
+        "puntos_codigo": 1000,
+        "puntos_jugar": 300,
+      },
+      {
+        "creation": "2022-12-19",
+        "codigo": 274956,
+        "puntos_totales": 1200,
+        "puntos_codigo": 1000,
+        "puntos_jugar": 200,
+      }
+    ];
+  }
+
+  public jugarParticipacion(codigo: any){
+    //Guardamos el código en las cookies porque se usará para validar las participaciones del juego
+    this.router.navigate(["instrucciones-juego"]);
+  }
+
+  public changeTienda(event:any){
+    console.log("Value: ",this.participacion.tienda);
+  }
+
+  public registrarCodigo(){
 
   }
 
