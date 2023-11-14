@@ -341,7 +341,8 @@
 }
 
 //Button
-.mat-flat-button{
+//Button
+.mdc-button {
     background: #CD0000 0% 0% no-repeat padding-box;
     opacity: 1;
     width: 188px;
@@ -358,14 +359,10 @@
     }
 }
 
-.icon-play{
-    color: #CD0000;
+.mat-mdc-unelevated-button.mat-warn {
+    --mdc-filled-button-container-color: #CD0000;
+    --mdc-filled-button-label-text-color: #fff;
 }
-
-.mat-flat-button.mat-primary.mat-button-disabled, .mat-flat-button.mat-accent.mat-button-disabled, .mat-flat-button.mat-warn.mat-button-disabled, .mat-flat-button.mat-button-disabled.mat-button-disabled, .mat-raised-button.mat-primary.mat-button-disabled, .mat-raised-button.mat-accent.mat-button-disabled, .mat-raised-button.mat-warn.mat-button-disabled, .mat-raised-button.mat-button-disabled.mat-button-disabled, .mat-fab.mat-primary.mat-button-disabled, .mat-fab.mat-accent.mat-button-disabled, .mat-fab.mat-warn.mat-button-disabled, .mat-fab.mat-button-disabled.mat-button-disabled, .mat-mini-fab.mat-primary.mat-button-disabled, .mat-mini-fab.mat-accent.mat-button-disabled, .mat-mini-fab.mat-warn.mat-button-disabled, .mat-mini-fab.mat-button-disabled.mat-button-disabled {
-    background: #CD0000 0% 0% no-repeat padding-box;
-}
-
 .spinner{
     margin-top: 7px;
     padding-left: 5px;
