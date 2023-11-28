@@ -46,7 +46,7 @@
                     </mat-form-field>
                     <div *ngIf="errors.ciudad" class="invalid-feedback">{{ errors.ciudad }}</div>
 
-                    <mat-form-field appearance="outline">
+                    <mat-form-field class="inputs-login"appearance="outline">
                         <mat-label>Edad</mat-label>
                         <mat-select [(ngModel)]="user.edad" name="edad">
                             <mat-option *ngFor="let edad of edades" [value]="edad.value">
@@ -128,7 +128,7 @@
                         </mat-form-field>
                         <div *ngIf="errors.ciudad" class="invalid-feedback">{{ errors.ciudad }}</div>
         
-                        <mat-form-field appearance="outline">
+                        <mat-form-field class="inputs-login"appearance="outline">
                             <mat-label>Edad</mat-label>
                             <mat-select [(ngModel)]="user.edad" name="edad">
                                 <mat-option *ngFor="let edad of edades" [value]="edad.value">
