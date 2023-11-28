@@ -1,1 +1,55 @@
-<p>perfil-screen works!</p>
+<section class="termninos-condiciones">
+    <div class="wrapper">
+      <mat-drawer-container>
+        <mat-drawer #drawer mode='over' position="start">
+          <app-left-sidebar (cerrar)="drawer.toggle()"></app-left-sidebar>
+      </mat-drawer>
+      <app-header-app (drawer)="drawer.toggle()"></app-header-app>
+      <div class="body-perfil">
+        <div class="eslogan {{isMobile()}}">
+          <div class="line-color">
+            <div class="vertical-line" style="height: 111px;"></div>
+            </div>
+            <div class="title-link">
+                <span>PERFIL DE USUARIO</span>
+                </div>
+            </div>
+            <div class="perfil-text">
+                <div class="section-img">
+                    <img src="/assets/images/yo.jpg" class="yo">
+                    <span class="txt">Diego Nava</span>
+                </div>
+                <div class="section-datos">
+                    <div class="datos">
+                        <span class="txt">Corredor</span>
+                        <span class="txt-normal">Veterano</span>
+                    </div>
+                    <div class="datos">
+                        <span class="txt">Total de carreras</span>
+                        <span class="txt-normal">30</span>
+                    </div>
+                    <div class="datos">
+                        <span class="txt">Carreras Ganadas</span>
+                        <span class="txt-normal">19</span>
+                    </div>
+                </div>
+            </div>
+            <div class="section-puntaje">
+                <div class="rectangulo"></div>
+                <div class="title-puntos">
+                    <span>TOTAL DE PUNTOS</span>
+                </div>
+                <div class="puntaje">
+                    <span class="pts">29678</span>
+                </div>
+                <div class="footer-puntos">
+                    <span>puntos</span>
+                </div>
+            </div>
+            <div class="footer">
+                <app-footer-app></app-footer-app>
+            </div>
+        </div>
+        </mat-drawer-container>
+    </div>
+</section>

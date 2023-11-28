@@ -10,6 +10,7 @@ import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.compon
 import { PoliticaScreenComponent } from './screens/politica-screen/politica-screen.component';
 import { TerminosCondicionesScreenComponent } from './screens/terminos-condiciones-screen/terminos-condiciones-screen.component';
 import { JuegoLliveScreenComponent } from './screens/juego-llive-screen/juego-llive-screen.component';
+import { PerfilScreenComponent } from './screens/perfil-screen/perfil-screen.component';
 
 
 const routes: Routes = [
@@ -23,7 +24,8 @@ const routes: Routes = [
   { path: 'politicas', component: PoliticaScreenComponent, pathMatch: 'full'},
   { path: 'terminos', component: TerminosCondicionesScreenComponent, pathMatch: 'full'},
   { path: 'juegoLive', component: JuegoLliveScreenComponent, pathMatch: 'full'},
-  { path: 'juegoTerminado', component: JuegoTerminadoScreenComponent, pathMatch: 'full'}
+  { path: 'juegoTerminado', component: JuegoTerminadoScreenComponent, pathMatch: 'full'},
+  { path: 'perfil', component: PerfilScreenComponent, pathMatch: 'full'}
 ];
 
 @NgModule({
