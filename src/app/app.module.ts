@@ -30,6 +30,7 @@ import { InstruccionesScreenComponent } from './screens/instrucciones-screen/ins
 import { PoliticaScreenComponent } from './screens/politica-screen/politica-screen.component';
 import { JuegoLliveScreenComponent } from './screens/juego-llive-screen/juego-llive-screen.component';
 import { TerminosCondicionesScreenComponent } from './screens/terminos-condiciones-screen/terminos-condiciones-screen.component';
+import { PerfilScreenComponent } from './screens/perfil-screen/perfil-screen.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { TerminosCondicionesScreenComponent } from './screens/terminos-condicion
     PoliticaScreenComponent,
     JuegoLliveScreenComponent,
     TerminosCondicionesScreenComponent,
+    PerfilScreenComponent,
   ],
   imports: [
     BrowserModule,
