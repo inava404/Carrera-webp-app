@@ -329,3 +329,8 @@ mat-label{
 ::ng-deep .mat-progress-spinner circle, .mat-spinner circle {
     stroke: #FFFFFF;
 }
+
+.mat-mdc-unelevated-button.mat-warn {
+    --mdc-filled-button-container-color: #CD0000;
+    --mdc-filled-button-label-text-color: #fff;
+}

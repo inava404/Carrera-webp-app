@@ -22,7 +22,7 @@ export class LeftSidebarComponent implements OnInit {
   }
 
   public iniciarSesion(){
-
+    
   }
 
   public goInicio(){

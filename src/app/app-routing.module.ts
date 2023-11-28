@@ -7,6 +7,9 @@ import { JuegoTerminadoScreenComponent } from './screens/juego-terminado-screen/
 import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/bases-promocion-screen.component';
 import { InstruccionesScreenComponent } from './screens/instrucciones-screen/instrucciones-screen.component';
 import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.component';
+import { PoliticaScreenComponent } from './screens/politica-screen/politica-screen.component';
+import { TerminosCondicionesScreenComponent } from './screens/terminos-condiciones-screen/terminos-condiciones-screen.component';
+import { JuegoLliveScreenComponent } from './screens/juego-llive-screen/juego-llive-screen.component';
 
 
 const routes: Routes = [
@@ -15,8 +18,12 @@ const routes: Routes = [
   { path: 'home', component: HomeScreenComponent, pathMatch: 'full' },
   { path: 'juego terminado', component: JuegoTerminadoScreenComponent, pathMatch: 'full' },
   { path: 'bases-promocion', component: BasesPromocionScreenComponent, pathMatch: 'full' },
-  {path: 'instrucciones', component: InstruccionesScreenComponent, pathMatch: 'full'},
-  { path: 'juego', component: JuegoScreenComponent, pathMatch: 'full'}
+  { path: 'instrucciones', component: InstruccionesScreenComponent, pathMatch: 'full'},
+  { path: 'juego', component: JuegoScreenComponent, pathMatch: 'full'},
+  { path: 'politicas', component: PoliticaScreenComponent, pathMatch: 'full'},
+  { path: 'terminos', component: TerminosCondicionesScreenComponent, pathMatch: 'full'},
+  { path: 'juegoLive', component: JuegoLliveScreenComponent, pathMatch: 'full'},
+  { path: 'juegoTerminado', component: JuegoTerminadoScreenComponent, pathMatch: 'full'}
 ];
 
 @NgModule({

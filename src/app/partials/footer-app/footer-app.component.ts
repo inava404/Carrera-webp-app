@@ -15,11 +15,11 @@ export class FooterAppComponent implements OnInit {
   ngOnInit(): void {
   }
   public terminosCondiciones(){
-    this.router.navigate(["terminos-y-condiciones"]);
+    this.router.navigate(["terminos"]);
   }
 
   public avisoPrivacidad(){
-    this.router.navigate(["aviso-de-privacidad"]);
+    this.router.navigate(["politicas"]);
   }
 
 }

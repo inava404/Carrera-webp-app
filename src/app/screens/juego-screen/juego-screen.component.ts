@@ -25,6 +25,6 @@ export class JuegoScreenComponent {
   }
 
   public omitir(){
-    this.router.navigate(["juego"]);
+    this.router.navigate(["juegoLive"]);
   }
 }

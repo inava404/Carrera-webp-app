@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-juego-llive-screen',
@@ -7,4 +8,15 @@ import { Component } from '@angular/core';
 })
 export class JuegoLliveScreenComponent {
 
+  constructor(
+    private router: Router,
+  ) { }
+
+  ngOnInit(): void {
+
+  }
+
+  public goJuegoTerminado(){
+    this.router.navigate(["juegoTerminado"]);
+  }
 }
