@@ -58,7 +58,7 @@
 
 .perfil-text{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: start;
   padding-left: 50px;
@@ -89,19 +89,19 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
+  margin-top: 20px;
   padding-top: 10px;
-  padding-bottom: 3rem;
+  padding-bottom: 0.5rem;
   padding-left: 1rem;
-}
-
-.datos{
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 3rem;
-  padding-left: 1rem;
+  .datos{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+  }
 }
 
 .txt{
@@ -163,4 +163,35 @@
   text-align: center;
   font-family: 'Avenir Next LT Pro', sans-serif;
   margin-bottom: 40px;
+}
+
+//Estilos Desktop
+
+.perfil-text-desktop{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: start;
+  padding-left: 50px;
+  padding-right: 60px;
+}
+
+.section-datos-desktop{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  padding-top: 15px;
+  padding-bottom: 3rem;
+  padding-left: 1rem;
+  .datos{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+  }
 }

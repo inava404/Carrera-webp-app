@@ -8,45 +8,45 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-.header{
+  }
+  
+  .header{
     width: 100%;
     height: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.logo-marca{
+  }
+  
+  .logo-marca{
     width: 280px;
     height: 34px;
-}
-
-.login-img{
+  }
+  
+  .login-img{
     width: 360px;
     height: 184px;
-}
-
-.content{
+  }
+  
+  .content{
     width: 100%;
     height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-}
-
-.login-body{
+  }
+  
+  .login-body{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-
-.form-login{
+  }
+  
+  .form-login{
     margin-top: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
@@ -56,98 +56,99 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-}
-
-.title-login{
+  }
+  
+  .title-login{
     text-align: left;
     font-family: Avenir-Bold!important;
     font-size: 20px;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
-}
-
-.label-pwd{
+  }
+  
+  .label-pwd{
     text-align: left;
     font-family: Avenir-Bold!important;
     font-size: 14px;
     letter-spacing: 0px;
     color: #CD0000;
     opacity: 1;
-}
-
-.txt-registro{
+  }
+  
+  .txt-registro{
     text-align: center;
     font-family: Avenir!important;
     font-size: 16px;
     letter-spacing: 0px;
     color: #000000;
-
-}
-.red{
+  
+  }
+  .red{
     font-family: Avenir-Bold!important;
     letter-spacing: 0px;
     color: #CD0000;
     cursor: pointer;
-}
-
-//Footer
-.footer{
+  }
+  
+  //Footer
+  .footer{
     width: 100%;
     height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-}
-
-.liston-img{
+  }
+  
+  .liston-img{
     width: 56px;
     height: 28px;
-}
-
-//Estilos mat-inputs
-.mat-form-field{
+  
+  }
+  
+  //Estilos mat-inputs
+  .mat-form-field{
     width: 100%;
-}
-
-::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+  }
+  
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
     color: #000000;
     // background: #FFFFFF 0% 0% no-repeat padding-box;
-}
-
-::ng-deep .mat-focused .mat-form-field-label {
+  }
+  
+  ::ng-deep .mat-focused .mat-form-field-label {
     /*change color of label*/
     text-align: left;
     font-family: Avenir!important;
     letter-spacing: 0px;
     color: #000000 !important;
     opacity: 1;
-}
-
-hr{
+  }
+  
+  hr{
     border-top: 2px solid #8c8b8b;
     width: 100%;
-}
-mat-label{
+  }
+  mat-label{
     text-align: left;
     font-family: Avenir;
     font-size: 16px;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
-}
-
-::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper {
+  }
+  
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper {
     margin: 0 0!important;
-}
-
-::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+  }
+  
+  ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
     color: #000000!important;
-}
-
-//Button
-.mat-flat-button{
+  }
+  
+  //Button
+  .mat-flat-button{
     background: #CD0000 0% 0% no-repeat padding-box;
     opacity: 1;
     width: 188px;
@@ -162,10 +163,10 @@ mat-label{
         color: #FFFFFF;
         opacity: 1;
     }
-}
-
-//Todos los estilos para desktop
-.wrapper-desktop{
+  }
+  
+  //Todos los estilos para desktop
+  .wrapper-desktop{
     width: 100vw;
     height: 100vh;
     overflow-y: hidden!important;
@@ -173,18 +174,18 @@ mat-label{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-.header-desktop{
+  }
+  
+  .header-desktop{
     width: 100vw;
     height: 90vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-end;
-}
-
-.body-desktop{
+  }
+  
+  .body-desktop{
     width: 100vw;
     height: 90vh;
     overflow-y: hidden!important;
@@ -192,9 +193,9 @@ mat-label{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-}
-
-.section-left{
+  }
+  
+  .section-left{
     margin-left: 2rem;
     width: 60%;
     height: 90vh;
@@ -203,9 +204,9 @@ mat-label{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.section-right{
+  }
+  
+  .section-right{
     padding-top: 3.5rem;
     width: 40%;
     height: 90vh;
@@ -214,9 +215,9 @@ mat-label{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
-.form-login-desktop{
+  
+  }
+  .form-login-desktop{
     padding-left: 2rem;
     padding-right: 2rem;
     width: 100%;
@@ -225,19 +226,19 @@ mat-label{
     justify-content: flex-start;
     align-items: flex-start;
     gap: 0.5rem;
-}
-
-.logo-marca-desktop{
+  }
+  
+  .logo-marca-desktop{
     width:50%;
     height: 100%;
-}
-
-.login-img-desktop{
+  }
+  
+  .login-img-desktop{
     width: 100%;
     height: 100%;
-}
-//Footer desktop
-.footer-desktop{
+  }
+  //Footer desktop
+  .footer-desktop{
     width: 100%;
     height: 10vh;
     overflow-y: hidden!important;
@@ -245,10 +246,16 @@ mat-label{
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
-}
-
-//Button
-.mdc-button {
+  }
+  
+  .inputs-login {
+    width: 280px; /* Ancho de 280 píxeles */
+    height: 48px; /* Alto de 48 píxeles */
+    margin: 10px auto;
+    width: 100%;
+  }
+  
+  .mdc-button {
     background: #CD0000 0% 0% no-repeat padding-box;
     opacity: 1;
     width: 188px;
@@ -263,9 +270,9 @@ mat-label{
         color: #FFFFFF;
         opacity: 1;
     }
-}
-
-.mat-mdc-unelevated-button.mat-warn {
+  }
+  
+  .mat-mdc-unelevated-button.mat-warn {
     --mdc-filled-button-container-color: #CD0000;
     --mdc-filled-button-label-text-color: #fff;
-}
+  }

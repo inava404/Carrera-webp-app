@@ -18,16 +18,16 @@
                             <input [(ngModel)]="username" type="email" matInput placeholder="Ingresa correo electrónico">
                         </mat-form-field>
                         <div *ngIf="errors.username" class="invalid-feedback">{{ errors.username }}</div>
-                        
+  
                         <mat-form-field class="inputs-login" appearance="outline">
                             <mat-label class="label">Contraseña</mat-label>
                             <input [(ngModel)]="password" type="{{ inputType_1 }}" class="input" matInput placeholder="Ingresa contraseña" (keyup.enter)="login()">
                             <mat-icon matSuffix class="eye-icon" (click)="showPassword()">{{hide_1 ? 'visibility_off' : 'visibility'}}</mat-icon>
                         </mat-form-field>
                         <div *ngIf="errors.password" class="invalid-feedback">{{ errors.password }}</div>
-
+  
                         <span class="label-pwd" style="cursor: pointer;" (click)="recuperarPwd()">Recupera tu contraseña</span>
-
+  
                         <div class="d-flex flex-direction-row justify-content-center w-100 mt-4 mb-4">
                             <button mat-flat-button color="warn" class="btn-login" (click)="login()">
                                 <span class="text-btn">INGRESAR</span>
@@ -35,11 +35,11 @@
                         </div>
                         <hr>
                         <span class="txt-registro">¿Aún no tienes una cuenta?<span class="red" (click)="goRegistro()"> Regístrate</span></span>
+                        <div class="footer-desktop">
+                          <img src="/assets/images/liston-img.png" class="liston-img">
+                      </div>
                     </div>
                 </div>
-            </div>
-            <div class="footer-desktop">
-                <img src="/assets/images/liston-img.png" class="liston-img">
             </div>
         </div>
     </ng-container>
@@ -79,7 +79,7 @@
                             <span class="txt-registro">¿Aún no tienes una cuenta?<span class="red" (click)="goRegistro()"> Regístrate</span></span>
                         </div>
                     </div>
-                    
+  
                 </div>
             </div>
             <div class="footer-desktop">
@@ -87,4 +87,4 @@
             </div>
         </div>
     </ng-template>
-</section>
+  </section>

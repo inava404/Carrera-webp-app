@@ -7,16 +7,13 @@ import { Component } from '@angular/core';
 })
 export class PerfilScreenComponent {
 
-  constructor() { }
+  isMobile: boolean;
 
-  ngOnInit(): void {
+  constructor() {
+    this.isMobile = this.detectMobile();
   }
 
-  public isMobile(){
-    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent)){
-      return "interior-mobile";
-    }else{
-      return "interior-normal";
-    }
+  private detectMobile(): boolean {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini|Mobile|mobile|CriOS/i.test(navigator.userAgent);
   }
 }
