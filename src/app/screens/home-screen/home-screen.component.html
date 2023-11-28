@@ -27,8 +27,8 @@
                     <div class="{{isMobile(1)}}">
                         <div class="registra-codigo">
                             <span class="txt-registro">REGISTRA TU CÓDIGO</span>
-                            <!-- Inputs dinámicos -->
-                            <form [formGroup]="inputsCodigo" class="mt-3">
+                             <!-- Inputs dinámicos -->
+                             <form [formGroup]="inputsCodigo" class="mt-3">
                                 <div formArrayName="listaInputs">
                                     <div class="input-codigo">
                                         <div *ngFor="let item of getCamposInputs.controls; let i=index" [formGroupName]="i">
@@ -37,9 +37,10 @@
                                     </div>
                                 </div>
                             </form>
-        
+  
                             <!-- Select tiendas -->
-                            <mat-form-field appearance="outline" class="mt-3">
+  
+                              <mat-form-field appearance="outline" class="mt-5" class="inputs-login">
                                 <mat-label>Tienda de compra</mat-label>
                                 <mat-select [(ngModel)]="participacion.tienda" name="tiendas" (selectionChange)="changeTienda($event)">
                                     <mat-option *ngFor="let tienda of tiendas" [value]="tienda.value">
@@ -47,7 +48,9 @@
                                     </mat-option>
                                 </mat-select>
                             </mat-form-field>
-                            
+  
+  
+  
                             <div class="d-flex flex-direction-row justify-content-center w-100 mt-3 mb-3">
                                 <button mat-flat-button color="warn" class="btn-login" (click)="registrarCodigo()" [disabled]="isLoading">
                                     <span class="text-btn" *ngIf="!isLoading">REGISTRAR</span>
@@ -73,9 +76,9 @@
                         <div class="codigos-registrados">
                             <div class="{{isMobile(2)}}">
                                 <h3 class="title-codigos">CÓDIGOS REGISTRADOS</h3>
-                                <table class="table table-responsive" *ngIf="lista_codigos.length > 0; else sinCodigos">
+                                <table class="table table-responsive"  *ngIf="lista_codigos.length > 0; else sinCodigos">
                                     <thead class="head-table">
-                                    <tr>
+                                      <tr>
                                         <th scope="col" *ngIf="tiene_juegos_pendientes">Jugar</th>
                                         <th scope="col">Fecha</th>
                                         <th scope="col">Código</th>
@@ -83,10 +86,10 @@
                                         <th scope="col" style="min-width: 100px;">Puntos por código</th>
                                         <th scope="col" style="min-width: 100px;">Puntos por jugar</th>
                                         <th scope="col" style="min-width: 20px; border-bottom: 0px;"></th>
-                                    </tr>
+                                      </tr>
                                     </thead>
                                     <tbody>
-                                    <tr class="tr-table" *ngFor="let codigo of lista_codigos; let i=index">
+                                      <tr class="tr-table" *ngFor="let codigo of lista_codigos; let i=index">
                                         <td *ngIf="tiene_juegos_pendientes" style="text-align: center;">
                                             <mat-icon class="icon-play" *ngIf="codigo.participaciones < 2" style="cursor: pointer;" (click)="jugarParticipacion(codigo)">play_circle_outline</mat-icon>
                                         </td>
@@ -96,7 +99,7 @@
                                         <td style="min-width: 100px; text-align: center;">{{codigo.puntos_codigo}}</td>
                                         <td style="min-width: 100px; text-align: center;">{{codigo.puntos_jugar}}</td>
                                         <td style="min-width: 20px; text-align: center; border-bottom: 0px;"></td>
-                                    </tr>
+                                      </tr>
                                     </tbody>
                                 </table>
                                 <ng-template #sinCodigos>
@@ -112,4 +115,4 @@
             </div>
         </mat-drawer-container>
     </div>
-</section>
+  </section>

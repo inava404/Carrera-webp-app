@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 
 export class HomeScreenComponent implements OnInit {
 
-  public name_user: string = "Diego Nava";
+  public name_user: string = "Andy Pérez Pavón";
   public isLoading: boolean = false;
   //Form dinámico de campos de texto
   public inputsCodigo : FormGroup;
@@ -20,7 +20,7 @@ export class HomeScreenComponent implements OnInit {
   //Lista de codigos
   public lista_codigos: any[] = [];
   public tiene_juegos_pendientes: boolean = false;
-  
+
   constructor(
     private router: Router,
     private fb: FormBuilder,
@@ -41,7 +41,7 @@ export class HomeScreenComponent implements OnInit {
       control_1.push(this.fb.group({valor:'', extra: false}));
     }
   }
-  
+
   get getCamposInputs(){
     return this.inputsCodigo.get('listaInputs') as FormArray;
   }

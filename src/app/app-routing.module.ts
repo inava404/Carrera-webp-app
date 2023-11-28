@@ -5,13 +5,18 @@ import { RegistroScreenComponent } from './screens/registro-screen/registro-scre
 import { HomeScreenComponent } from './screens/home-screen/home-screen.component'; 
 import { JuegoTerminadoScreenComponent } from './screens/juego-terminado-screen/juego-terminado-screen.component';
 import { BasesPromocionScreenComponent } from './screens/bases-promocion-screen/bases-promocion-screen.component';
+import { InstruccionesScreenComponent } from './screens/instrucciones-screen/instrucciones-screen.component';
+import { JuegoScreenComponent } from './screens/juego-screen/juego-screen.component';
+
 
 const routes: Routes = [
   { path: '', component: LoginScreenComponent, pathMatch: 'full' },
   { path: 'registro', component: RegistroScreenComponent, pathMatch: 'full' },
   { path: 'home', component: HomeScreenComponent, pathMatch: 'full' },
   { path: 'juego terminado', component: JuegoTerminadoScreenComponent, pathMatch: 'full' },
-  { path: 'bases-promocion', component: BasesPromocionScreenComponent, pathMatch: 'full' }
+  { path: 'bases-promocion', component: BasesPromocionScreenComponent, pathMatch: 'full' },
+  {path: 'instrucciones', component: InstruccionesScreenComponent, pathMatch: 'full'},
+  { path: 'juego', component: JuegoScreenComponent, pathMatch: 'full'}
 ];
 
 @NgModule({
